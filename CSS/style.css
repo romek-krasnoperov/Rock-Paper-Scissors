@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 50vh;
+}
+
+.btn {
+    height: 5rem;
+    width: 7rem;
+}
