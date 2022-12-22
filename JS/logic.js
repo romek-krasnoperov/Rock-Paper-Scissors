@@ -30,8 +30,8 @@ function clickListener(e) {
 }
 
 // get random Computer choices
-function computerPlay(){
-    return signs[(Math.floor(Math.random()*3))]
+function computerPlay() {
+    return signs[(Math.floor(Math.random() * 3))]
 }
 /* one with "if" statement 
 function computerPlay() {
@@ -44,23 +44,23 @@ function computerPlay() {
 // Change labels + count "won"
 function playerWin() {
     ++playerWinAmount;
-    playerScore.innerHTML = "Your score is: " + playerWinAmount;
+    playerScore.innerHTML = playerWinAmount;
 };
 
 function computerWin() {
     ++computerWinAmount;
-    computerScore.innerHTML = "The computer score is: " + computerWinAmount;
+    computerScore.innerHTML = computerWinAmount;
 }
 
 function tieWin() {
     ++tieAmount;
-    tieText.innerHTML = "Tie rounds: " + tieAmount;
+    tieText.innerHTML = tieAmount;
 }
 
 // Function that checks winning very inelegantly
 
 function playRound(playerSelection, computerSelection) {
-    if  (playerSelection==computerSelection){
+    if (playerSelection == computerSelection) {
         tieWin();
     } else if (
         (playerSelection == "paper" && computerSelection == "rock") ||
@@ -83,8 +83,8 @@ function playRound(playerSelection, computerSelection) {
 
 //Reset a game
 function reset() {
-    playerScore.innerHTML = "Your score is: 0";
-    computerScore.innerHTML = "The computer score is: 0";
-    tieText.innerHTML = "Tie rounds: 0";
+    playerScore.innerHTML = 0;
+    computerScore.innerHTML = 0;
+    tieText.innerHTML = 0;
     location.reload();
 }
