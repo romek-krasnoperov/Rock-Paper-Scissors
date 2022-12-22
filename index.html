@@ -5,10 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
-    <script type="text/javascript" src="./JS/logic.js"></script>
+    <!--<script type="text/javascript" src="./JS/logic.js"></script>-->
     <title>Document</title>
 </head>
 <body>
-    
+    <h1 class="h-one">Rock Paper Scissors</h1>
+    <div class="container" id="button-container">
+        <button class="btn one" id="rock">Rock</button>
+        <button class="btn two" id="paper">Paper</button>
+        <button class="btn three" id="scissors">Scissors</button>
+    </div>
+
+    <div id="results">
+        <p id="player-score">Your score is: 0</p>
+        <p id="computer-score">The computer score is: 0</p>
+        <p id="result-tie">Tie rounds: 0</p>
+    </div>
+
+    <script src="./JS/logic.js"></script>
+
 </body>
 </html>
