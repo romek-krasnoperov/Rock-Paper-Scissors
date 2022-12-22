@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,49 @@
     <!--<script type="text/javascript" src="./JS/logic.js"></script>-->
     <title>Document</title>
 </head>
+
 <body>
-    <h1 class="h-one">Rock Paper Scissors</h1>
+    <div class="container title">
+        <div>
+            <h1 class="game">The game: </h1>
+        </div>
+        <div class="h">
+            <h1 class="one">Rock</h1>
+            <h1 class="two">Paper</h1>
+            <h1 class="three">Scissors</h1>
+        </div>
+        <div class="e">
+            <p class="explanation one">To start the game please choose an appropriate button.</p>
+            <p class="explanation two">Your goal is to win 5 rounds.</p>
+            <p class="explanation three">Good luck!</p>
+        </div>
+    </div>
+
+    <br>
+
     <div class="container" id="button-container">
         <button class="btn one" id="rock">Rock</button>
         <button class="btn two" id="paper">Paper</button>
         <button class="btn three" id="scissors">Scissors</button>
     </div>
 
-    <div id="results">
-        <p id="player-score">Your score is: 0</p>
-        <p id="computer-score">The computer score is: 0</p>
-        <p id="result-tie">Tie rounds: 0</p>
+    <br>
+
+    <div id="results" class="container">
+        <div class="result">
+            <p id="player-scr">Player scores</p>
+            <p id="computer-scr">Computer scores</p>
+            <p id="tie-scr">Tie rounds</p>
+        </div>
+        <div class="scores">
+            <p id="player-score">0</p>
+            <p id="computer-score">0</p>
+            <p id="result-tie">0</p>
+        </div>
     </div>
 
     <script src="./JS/logic.js"></script>
 
 </body>
+
 </html>
